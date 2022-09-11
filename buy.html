@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chilly Cream</title>
+    <link rel="stylesheet" href="/helping/buystyle.css">
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/f1cae1c131.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div id="header">
+            <div class="logo">
+                <img src="/assets/img/creamlogo.webp" alt="Chilly Cream Logo">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li style="margin-right: -3.6px;" class="mar-left"><a href="http://127.0.0.1:5500/"><i class="icons fa-solid fa-house"></i>Home</a></li>
+                    <li><a class="marbuy active" href="http://127.0.0.1:5500/helping/buy.html"><i class="icons fa-solid fa-money-check"></i>Buy</a></li>
+                    <li><a href="http://127.0.0.1:5500/helping/about.html"><i class="icons fa-solid fa-circle-info"></i>About</a></li>
+                    <li><a href="http://127.0.0.1:5500/#footer"><i class="icons fa-solid fa-phone"></i>Contact</a></li>
+                    <li><a href="http://127.0.0.1:5500/helping/help.html">
+                        <i class="icons fa-solid fa-question"></i>Help</a></li>
+                </ul>
+                 
+            </div>
+
+        </div>
+        <div class="checkout">
+            <h6> Checkout Counter </h6>
+        </div>
+        <div class="step1">
+            <p><span id="circle1">&nbsp;1&nbsp; </span><span id="circle-head1">Choose Your Ice Cream :</span></p>
+            <form action="">
+                <label for="flavor">🍦 Your ice cream flavor is :</label>
+                <select name="flavor" id="flavor">
+                    <option id="white" value="vanilla">Vanilla</option>
+                    <option id="brown" value="chocolate">Chocolate</option>
+                    <option id="pink" value="strawberry">Strawberry</option>
+                    <option id="green" value="matcha">Matcha</option>
+                    <option id="white" value="coconut">Coconut</option>
+                    <option id="yellow" value="mango">Mango</option>
+                    <option id="blue" value="blueberry">Blueberry</option>
+                    <option id="yellow" value="durian">Durian</option>    
+                </select>
+            </form>
+            <form id="martop" action="">
+               <label  for="Amount">🍦 Amount : </label>
+                <input list="Amount" name="Amount" maxlength="3" required>
+                <datalist id="Amount">
+                  <option value="1">
+                  <option value="2">
+                  <option value="3">
+                  <option value="4">
+                  <option value="5">
+                </datalist>
+              </form>
+        </div>
+
+        <div class="step2">
+            <p><span id="circle2">&nbsp;2&nbsp; </span><span id="circle-head2">Fill In Your Information :</span></p>
+         <form id="hi">
+                <label class="label" for="name">Name : </label><br>
+                <input class="input" type="text" id="name" name="name" placeholder="Michael Jordan" required><br>
+                <label class="label" for="phone-number">Phone Number : </label><br>
+                <input class="input" type="tel" id="phone-number" name="phone-number" placeholder="091 234 5678" required><br>
+                <label class="label" for="address">Address : </label><br>
+                <input class="input addr" type="text" id="address" name="address" size="46" placeholder="504/74 Kinh Duong Vuong Street, Binh Tan District, New York" required>
+         </form>
+              <form id="hello" action="">
+                <label id="message" for="message">Leave A Message : </label>
+                <textarea name="message" rows="15" cols="50"></textarea>
+             
+                
+              </form>
+        </div>
+        <button><a href="http://127.0.0.1:5500/helping/buying-success.html">BUY</a></button>
+    </body>
+    </html>
+
